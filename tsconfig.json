@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "lib": ["ES2021", "DOM"],
+    "allowImportingTsExtensions": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false, // https://lit.dev/docs/components/properties/#avoiding-issues-with-class-fields
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "strictNullChecks": false, // it is too painful to strictly check nulls
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "sourceMap": true, // enable sourcemaps
+    "inlineSources": true, // add the original files content inside the sourcemaps (no HTTP request by the debugger)
+    "removeComments": true, // multilines comments broke sourcemaps (anyway we don't need them in the JS)
+    // "explainFiles": true,
+    // "extendedDiagnostics": true,
+    // "diagnostics": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["cypress/**/*.ts", "scripts/ugly_legend_converter.ts"]
+}

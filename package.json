@@ -1,0 +1,20 @@
+{
+  "name": "lit-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "i18n-extract": "lit-localize extract",
+    "i18n-build": "lit-localize build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guillaume Beraudo",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@lit/localize": "^0.12.1",
+    "lit": "^3.1.2"
+  },
+  "devDependencies": {
+    "@lit/localize-tools": "^0.7.2"
+  }
+}
